@@ -18,9 +18,6 @@ const quotes = [
 
 
 
-/***
- * `getRandomQuote` function
-***/
 
 
 
