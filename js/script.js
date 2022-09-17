@@ -28,6 +28,11 @@ const quotes = [
  * `printQuote` function
 ***/
 
+function getRandomQuote() {
+  const randomIndexNumber = Math.floor(Math.random() * quotes.length)
+  const randomQuoteObj = quotes[randomIndexNumber];
+  return randomQuoteObj;
+}
 
 /***
  * click event listener for the print quote button
