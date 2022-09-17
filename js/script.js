@@ -26,14 +26,28 @@ function getRandomQuote() {
   return randomQuoteObj;
 }
 
+/** Prints the random quote to the screen. */
+function printQuote() {
+  const quoteObj = getRandomQuote();
 
+  const quote = quoteObj.quote;
+  const source = quoteObj.source;
+  const citation = quoteObj.citation;
+  const year = quoteObj.year;
 
+  let htmlString = `<p class="quote">${quote}</p><p class="source">${source}`;
 
+  if (citation) {
+    htmlString += `<span class="citation">${citation}</span>`;
+  }
 
-/***
- * `printQuote` function
-***/
+  if (year) {
+    htmlString += `<span class="year">${year}</span>`
+  }
 
+  htmlString += `</p>`;
+
+  document.getElementById('quote-box').innerHTML = htmlString;
 }
 
 /***
