@@ -16,6 +16,15 @@ const quotes = [
   { quote: "May you live all the days of your life.", source: 'Jonathan Swift' }
 ];
 
+/**
+ * Returns a random quote object from the quotes array.
+ * @returns {object} The random quote object.
+ */
+function getRandomQuote() {
+  const randomIndexNumber = Math.floor(Math.random() * quotes.length)
+  const randomQuoteObj = quotes[randomIndexNumber];
+  return randomQuoteObj;
+}
 
 
 
@@ -25,10 +34,6 @@ const quotes = [
  * `printQuote` function
 ***/
 
-function getRandomQuote() {
-  const randomIndexNumber = Math.floor(Math.random() * quotes.length)
-  const randomQuoteObj = quotes[randomIndexNumber];
-  return randomQuoteObj;
 }
 
 /***
