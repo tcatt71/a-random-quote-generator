@@ -59,6 +59,7 @@ function printQuote() {
   changeBodyBackgroundColor();
 }
 
+// Prints a new quote to the screen after a given amount of time.
 setInterval(printQuote, 15000);
 
 /***
