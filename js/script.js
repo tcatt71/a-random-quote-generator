@@ -26,6 +26,14 @@ function getRandomQuote() {
   return randomQuoteObj;
 }
 
+/** Changes the background color of the webpages body by means of a random hue */
+function changeBodyBackgroundColor() {
+  const body = document.querySelector('body');
+  const randomHue = Math.ceil(Math.random() * 360);
+
+  body.style.backgroundColor = `hsl(${randomHue}, 54%, 49%)`;
+}
+
 /** Prints the random quote to the screen. */
 function printQuote() {
   const quoteObj = getRandomQuote();
@@ -48,6 +56,7 @@ function printQuote() {
   htmlString += `</p>`;
 
   document.getElementById('quote-box').innerHTML = htmlString;
+  changeBodyBackgroundColor();
 }
 
 /***
