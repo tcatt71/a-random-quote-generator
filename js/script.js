@@ -34,7 +34,7 @@ function changeBodyBackgroundColor() {
   body.style.backgroundColor = `hsl(${randomHue}, 54%, 49%)`;
 }
 
-/** Prints the random quote to the screen. */
+/** Prints a random quote to the screen. */
 function printQuote() {
   const quoteObj = getRandomQuote();
 
