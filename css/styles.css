@@ -110,7 +110,17 @@ h1 {
   font-style: normal;
 }
 
-.year:before {
+a {
+  text-decoration-line: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+.year:before,
+.tag::before {
   content: ", ";
   font-style: normal;
 }
