@@ -60,7 +60,7 @@ function printQuote() {
   changeBodyBackgroundColor();
 }
 
-// Prints a new quote to the screen after a given amount of time.
+// To display a new quote repeatedly after a certain amount of time after the page loads if the 'Show another quote' button has not been clicked.
 let intervalID = setInterval(printQuote, 10000);
 
 /***
