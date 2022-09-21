@@ -42,6 +42,7 @@ function printQuote() {
   const source = quoteObj.source;
   const citation = quoteObj.citation;
   const year = quoteObj.year;
+  const tag = quoteObj.tag;
 
   let htmlString = `<p class="quote">${quote}</p><p class="source">${source}`;
 
