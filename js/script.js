@@ -60,7 +60,7 @@ function printQuote() {
     htmlString += `<span class="year">${year}</span>`
   }
 
-  htmlString += `<span class="tag"><a href="">${tag}</a><span></p>`;
+  htmlString += `<span class="tag"><a href="#">${tag}</a><span></p>`;
 
   document.getElementById('quote-box').innerHTML = htmlString;
   changeBodyBackgroundColor();
