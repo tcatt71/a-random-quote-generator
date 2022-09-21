@@ -61,7 +61,7 @@ function printQuote() {
 }
 
 // Prints a new quote to the screen after a given amount of time.
-setInterval(printQuote, 15000);
+let intervalID = setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
