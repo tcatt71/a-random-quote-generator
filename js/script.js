@@ -44,6 +44,12 @@ function printQuote() {
   const year = quoteObj.year;
   const tag = quoteObj.tag;
 
+  // Is it best practice to keep the resetTimer function within the printQuote function or make it global?
+  function resetTimer() {
+    clearInterval(intervalID);
+    intervalID = setInterval(printQuote, 10000);
+  }
+
   let htmlString = `<p class="quote">${quote}</p><p class="source">${source}`;
 
   if (citation) {
@@ -58,6 +64,7 @@ function printQuote() {
 
   document.getElementById('quote-box').innerHTML = htmlString;
   changeBodyBackgroundColor();
+  resetTimer();
 }
 
 // To display a new quote repeatedly after a certain amount of time after the page loads if the 'Show another quote' button has not been clicked.
